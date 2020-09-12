@@ -1,0 +1,172 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    height: 70px;
+    border: 1px solid #eee;
+}
+header h1{
+    display: inline-block;
+    padding: 15px 24px;
+    color: black;
+}
+
+header ul{
+    float: right;
+}
+header ul li{
+    padding: 24px;
+    display: inline-block;
+    color: black;
+}
+header ul li:hover{
+    background-color: coral;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: 0px auto;
+
+
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mobile-menu{
+    float: right;
+    display: none;
+    padding: 30px;
+}
+.mobile-menu:hover{
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(16, 47, 80, .9);
+    transition: .3s;
+    color: white;
+}
+.sidebar ul li a{
+    color: white;
+
+}
+.sidebar ul li a:hover{
+    background-color: tomato;
+}
+.sidebar ul li{
+    padding: 24px;
+    transition: .3s;
+}
+.sidebar ul li:hover{
+    background-color: tomato;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+.banner{
+    background-color: #53a0f3;
+    padding: 50px 0;
+}
+section{
+    padding: 50px 0;
+}
+.banner img{
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px #ddd;
+    margin-bottom: 10px;
+}
+.banner h2,
+.banner p{
+    color: white;
+    font-size: 18px;
+}
+.banner span{
+    color: rgb(255, 255, 255);
+}
+.banner h2{
+    margin-bottom: 10px;
+}
+.banner-left{
+    padding-left: 24px;
+}
+
+section h3{
+    padding-bottom: 20px ;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+section h3:before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: #ddd;
+    left: calc(50% - 60px);
+
+}
+
+.col-4{
+    width: 24%;
+    box-sizing: border-box;
+    padding: 5px;
+    float: left;
+}
+.col-4 img{
+    width: 100%;
+    border: 1px solid #eee;
+    
+}
+
+.col-4 a:hover img{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 30px grey; 
+}
+
+.col-3{
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    padding: 50px 10px;
+}
+.col-3 h4{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+footer{
+    background-color: #333;
+    padding: 50px;
+    text-align: center;
+}
+footer small{
+    color: #fff;
+}
+@media (max-width: 600px){
+    .mobile-menu{
+        display: block;
+    }
+    header ul{
+        display: none;
+    }
+}
