@@ -318,6 +318,7 @@ footer small {
     .banner {
         width: 100%;
         background-image: url(/img/blackw.png);
+        background-color: black;
     }
     .banner h1 {
         text-align: center;
