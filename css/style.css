@@ -63,6 +63,28 @@ p {
     top: 0;
     position: fixed;
     z-index: 10000;
+    animation: all 2s ease-in-out;
+}
+
+.heading .active{
+    background: red;
+}
+
+
+
+.skill{
+    padding-bottom: 0px;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.this-icon{
+    width: 100px;
+    padding: 20px;
 }
 
 .container::after {
@@ -91,7 +113,7 @@ p {
     bottom: 0;
     left: -300px;
     width: 300px;
-    background-color: rgba(16, 47, 80, .9);
+    background-color: rgba(64, 69, 75, 0.9);
     transition: .3s;
     color: white;
     z-index: 100000;
@@ -162,21 +184,21 @@ section {
 a.button1 {
     display: inline-block;
     padding: 0.35em 1.2em;
-    border: 0.1em solid #000000;
+    border: 0.1em solid #ffffff;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
     transition: all 0.2s;
     margin-top: 50px;
 }
 
 a.button1:hover {
-    color: #000000;
+    color: #ffffff;
     background-color: #757575;
 }
 
@@ -200,14 +222,24 @@ section h3:before {
 
 .hire {
     text-align: center;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    background-color: #000000;
+    color: white;
+}
+
+.hire h3{
+    color: white;
+}
+
+.hire p{
+    color: white;
 }
 
 footer {
-    background-color: rgb(0, 0, 0);
     padding: 50px;
     text-align: center;
+    color: rgb(0, 0, 0);
 }
 
 div.gallery:hover {
@@ -235,7 +267,7 @@ div.desc {
 }
 
 footer small {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -267,6 +299,11 @@ footer small {
     .banner h1 {
         text-align: center;
         margin-top: 40%;
+    }
+    .icon{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
