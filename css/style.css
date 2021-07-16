@@ -262,6 +262,17 @@ section h3:before {
     padding: 0px 50px 0px 50px;
 }
 
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 60px;
+    padding: 20px;
+}
+
 footer {
     padding: 50px;
     text-align: center;
